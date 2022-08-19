@@ -1,0 +1,41 @@
+---
+
+const { url, title } = Astro.props;
+
+function getUrlShareTwitter() {
+    const tweetInfo = {
+        text: `¡Nuevo en el blog! 🌟 ${title} 🌟  por 🎯 @dianait_`,
+        url: `https://dianait.dev${url}`,
+    };
+    const BASE_URL = "https://twitter.com/intent/tweet";
+    const content = `?text=${encodeURI(tweetInfo.text)}`;
+    const link = `&url=${tweetInfo.url}`;
+    return BASE_URL + content + link;
+}
+---
+
+<a href={getUrlShareTwitter()}>Compartir en Twitter</a>
+<style>
+    a {
+        display: block;
+        text-decoration: none;
+        background-color: #5da8dc;
+        width: 15rem;
+        height: 3rem;
+        border-radius: 50px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        line-height: 3rem;
+        position: fixed;
+        bottom: 2rem;
+        left: 20%;
+    }
+
+    @media (min-width: 900px) {
+        a {
+            left: 40%;
+            width: 17rem;
+        }
+    }
+</style>

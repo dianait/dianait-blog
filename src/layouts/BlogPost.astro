@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import Share from 	"../components/Share.astro";
 
 export interface Props {
 	content: {
@@ -9,11 +10,12 @@ export interface Props {
 		pubDate?: string;
 		updatedDate?: string;
 		heroImage?: string;
+		url?: String
 	};
 }
 
 const {
-	content: { title, description, pubDate, updatedDate },
+	content: { title, description, pubDate, updatedDate, url },
 } = Astro.props as Props;
 ---
 
@@ -29,6 +31,10 @@ const {
   				border-top: 1px solid #DDD;
 				margin: 1rem 0;
 			}
+
+			main {
+				margin-bottom: 5rem;
+			}
 		</style>
 	</head>
 
@@ -42,6 +48,7 @@ const {
 				<hr/>
 				<slot />
 			</article>
+			<Share url={url} title={title}/>
 		</main>
 	</body>
 </html>
