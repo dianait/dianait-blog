@@ -4,7 +4,7 @@ title:  "🎯 El mail que lo cambió todo"
 description: "Hoy vengo de nuevo con algo un poco más personal.
 Once upon a time..."
 pubDate: "Aug 26 2020"
-heroImage: "./icons/autobus.png"
+heroImage: "./img/autobus.png"
 ---
 
 Hay que remontarse unos cuantos años. Estaba haciendo las prácticas del ciclo superior en desarrollo web **cuando recibí un mail.**

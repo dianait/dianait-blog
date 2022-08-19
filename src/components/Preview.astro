@@ -9,7 +9,7 @@ const {post} = Astro.props;
         <time datetime={post.frontmatter.pubDate}>
             📆 {new Date(post.frontmatter.pubDate).toLocaleDateString('es-ES', {
                 year: 'numeric',
-                month: 'short',
+                month: 'long',
                 day: 'numeric',
             })}
         </time>
@@ -39,8 +39,8 @@ const {post} = Astro.props;
     }
 
     img {
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
         border-radius: 20%;
         margin-right: .5rem;
     }
