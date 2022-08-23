@@ -14,5 +14,10 @@
     "@astrojs/rss": "1.0.0",
     "@astrojs/sitemap": "1.0.0",
     "astro": "1.0.6"
+  },
+  "dependencies": {
+    "@fontsource/alegreya-sans-sc": "^4.5.9",
+    "@fontsource/be-vietnam": "^4.5.2",
+    "@fontsource/twinkle-star": "^4.5.9"
   }
 }

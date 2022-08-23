@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Share from 	"../components/Share.astro";
+import "@fontsource/alegreya-sans-sc"
 
 export interface Props {
 	content: {
@@ -24,8 +25,9 @@ const {
 		<BaseHead title={title} description={description} />
 		<style>
 			.title {
-				font-size: 2em;
+				font-size: 2.4em;
 				margin: 0.25em 0 0;
+				font-family: "Alegreya Sans SC", sans-serif; 
 			}
 			hr {
   				border-top: 1px solid #DDD;
