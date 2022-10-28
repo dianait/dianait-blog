@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Share from 	"../components/Share.astro";
+import Date from "../components/Date.astro"
 import "@fontsource/alegreya-sans-sc"
 
 export interface Props {
@@ -45,8 +46,8 @@ const {
 		<main>
 			<article>
 				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{updatedDate && <div>Last updated on <time>{updatedDate}</time></div>}
+				{pubDate && <Date date={pubDate} />}
+				{updatedDate && <Date date={updatedDate} />}
 				<hr/>
 				<slot />
 			</article>

@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "📝  Ir al final de un ScrollView en SwiftUI"
 pubDate: "Aug 14 2022"
 heroImage: "/img/swiftUI.png"
-description: "ScrollViewReader: de retos, listas y chats"
+description: "ScrollViewReader: de retos, listas y chats."
 ---
 
 agosto ya y todavía no he terminado ningún reto mensual de [Mouredev](https://github.com/mouredev/Monthly-App-Challenge-2022) & [Rviewer](https://go.rviewer.io/dev-firebase-chat-es/?utm_source=mouredev&utm_medium=github_repo&utm_campaign=firebase_chat_mouredev), lo cierto es que empecé el del trivial y el del pomodoro pero la vida se interpuso y no los pude terminar. También tenía un TFG que entregar. Por suerte, ahora ya no. Graduada hace un mes al aparato. 🎓
